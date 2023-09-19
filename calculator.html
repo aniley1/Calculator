@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2; /* Set the background color for the entire page */
+        }
+
+        #calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Set the background color for the calculator */
+            border-radius: 5px; /* Add rounded corners to the calculator */
+            padding: 20px; /* Add some padding to the calculator for spacing */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+        }
+
+        #display {
+            grid-column: span 4;
+            text-align: right;
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">0</div>
+        <button class="btn" id="clear">C</button>
+        <button class="btn" id="divide">/</button>
+        <button class="btn" id="multiply">*</button>
+        <button class="btn" id="7">7</button>
+        <button class="btn" id="8">8</button>
+        <button class="btn" id="9">9</button>
+        <button class="btn" id="subtract">-</button>
+        <button class="btn" id="4">4</button>
+        <button class="btn" id="5">5</button>
+        <button class="btn" id="6">6</button>
+        <button class="btn" id="add">+</button>
+        <button class="btn" id="1">1</button>
+        <button class="btn" id="2">2</button>
+        <button class="btn" id="3">3</button>
+        <button class="btn" id="equals" style="grid-column: span 2;">=</button>
+        <button class="btn" id="0">0</button>
+        <button class="btn" id="decimal">.</button>
+    </div>
+
+    <script>
+        // JavaScript code for calculator functionality (same as before)
+    </script>
+</body>
+</html>
